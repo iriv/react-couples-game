@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.map {
+  margin: auto;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-rows: repeat(3,1fr);*/
+  grid-gap: 10px;
+}
+
+.map > div {
+  border: 1px solid;
+  text-align: center;
+  /*background: #000;*/
+  cursor: pointer;
+}
+
+.map > div:not(.active) span {
+  /*display: none;*/
+  /*color: #fff;*/
+  visibility: hidden;
+  /*cursor: pointer;*/
+}
+
+/*	.map > div span.active {
+  visibility: visible!important;
+}*/
+
+.map > div:hover {
+  background: #ccc;
+}
