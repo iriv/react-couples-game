@@ -9,14 +9,24 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /*grid-template-rows: repeat(3,1fr);*/
-  grid-gap: 10px;
+  grid-gap: 30px;
 }
 
 .map > div {
-  border: 1px solid;
+  border: 1px solid #999;
   text-align: center;
   /*background: #000;*/
   cursor: pointer;
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+}
+
+.map > div span {
+  transition: visibility 1s;
+  line-height: 70px;
+  font-size: 30px;
+  /* font-weight: bold; */
 }
 
 .map > div:not(.active) span {
