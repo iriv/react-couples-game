@@ -1,3 +1,7 @@
+body {
+  background-color: #55aa55;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -5,28 +9,39 @@
 
 .map {
   margin: auto;
-  width: 400px;
+  width: 473px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /*grid-template-rows: repeat(3,1fr);*/
   grid-gap: 30px;
 }
 
+
 .map > div {
-  border: 1px solid #999;
-  text-align: center;
-  /*background: #000;*/
+/*border: 2px solid red; */
+text-align: center;
+  /* background: #000; */
   cursor: pointer;
-  height: 70px;
-  width: 70px;
-  border-radius: 35px;
+  /* border-radius: 35px; */
+  background-image: url(./cards.png);
+  background-size: auto;
+  /* opacity: 0.7; */
+  height: 284px;
+  width: 191px;
+  border-radius: 17px;
+  background-size: auto;
+  background-position-x: -webkit-calc(99% - 12px);
+  background-position-y: -webkit-calc(99% - -6px);
+  /* opacity: 0.7;*/
+  zoom:50%;
 }
 
+
 .map > div span {
-  transition: visibility 1s;
-  line-height: 70px;
-  font-size: 30px;
-  /* font-weight: bold; */
+transition: visibility 0.5s;
+line-height: 70px;
+font-size: 30px;
+/* font-weight: bold; */
 }
 
 .map > div:not(.active) span {
@@ -41,5 +56,9 @@
 }*/
 
 .map > div:hover {
-  background: #ccc;
+  /*background*/
+  /*opacity: 1;*/
+  /*border:2px solid #ccc;*/
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  /*zoom: 101%;*/
 }
